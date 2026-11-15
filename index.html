@@ -1,0 +1,299 @@
+﻿<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>مع الرسول ﷺ — تحميل التطبيق الرسمي للأندرويد</title>
+  <meta name="description" content="تطبيق مع الرسول ﷺ — اسمه كفعله: لنكون مع الرسول ﷺ كل يوم. عاداته، كلامه، مواقفه، هديه، سنته، وسيرته." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23162b1f'/%3E%3Cpath d='M32 10l6 6h8v8l6 8-6 8v8h-8l-6 6-6-6h-8v-8l-6-8 6-8v-8h8z' fill='none' stroke='%23d4b46a' stroke-width='2'/%3E%3Cpath d='M21 38c0-7 5-12 11-15 6 3 11 8 11 15z' fill='%23d4b46a'/%3E%3Cpath d='M16 42c6-3 11-2 16 1 5-3 10-4 16-1l-2 4c-5-2-9-1-14 2-5-3-9-4-14-2z' fill='%23f5ebd1'/%3E%3C/svg%3E" type="image/svg+xml" />
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f7f4ee;
+      --surface: #fdfbf7;
+      --surface-soft: #f2ede3;
+      --text: #1f1b16;
+      --text-muted: #5e554a;
+      --accent: #31573d;
+      --accent-hover: #274731;
+      --accent-soft: #e7ecdf;
+      --gold: #85692f;
+      --hairline: rgba(44, 37, 28, .12);
+      --shadow: 0 10px 30px rgba(31, 27, 22, .07);
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #151412;
+        --surface: #1d1b18;
+        --surface-soft: #25221e;
+        --text: #efe9de;
+        --text-muted: #bfb7a8;
+        --accent: #a6b897;
+        --accent-hover: #b8c8aa;
+        --accent-soft: #262f25;
+        --gold: #d0b774;
+        --hairline: rgba(239, 233, 222, .12);
+        --shadow: none;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Noto Sans Arabic", "Segoe UI", Tahoma, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.8;
+    }
+    .container {
+      max-width: 880px;
+      margin: 0 auto;
+      padding: 28px 18px 56px;
+    }
+    .hero {
+      background: var(--surface);
+      border: 1px solid var(--hairline);
+      border-radius: 24px;
+      padding: 32px 24px;
+      box-shadow: var(--shadow);
+      display: grid;
+      gap: 20px;
+      justify-items: center;
+      text-align: center;
+    }
+    .app-icon {
+      width: 108px;
+      height: 108px;
+      border-radius: 26px;
+      border: 2px solid color-mix(in srgb, var(--gold) 50%, var(--hairline));
+      box-shadow: 0 10px 28px rgba(0, 0, 0, .18);
+    }
+    .motto {
+      display: inline-block;
+      padding: 5px 14px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-size: 13px;
+      font-weight: 700;
+    }
+    h1 {
+      margin: 0;
+      font-size: clamp(28px, 5vw, 38px);
+      line-height: 1.25;
+    }
+    h1 span { color: var(--gold); }
+    .lead {
+      max-width: 660px;
+      margin: 0;
+      color: var(--text-muted);
+      font-size: 16px;
+    }
+    .badges {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 8px;
+    }
+    .badge {
+      padding: 4px 12px;
+      border-radius: 999px;
+      border: 1px solid var(--hairline);
+      background: var(--surface-soft);
+      font-size: 12.5px;
+      font-weight: 600;
+      color: var(--text-muted);
+    }
+    .cta-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+      width: 100%;
+      margin-top: 6px;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      min-height: 48px;
+      padding: 12px 22px;
+      border-radius: 14px;
+      font-size: 15px;
+      font-weight: 700;
+      text-decoration: none;
+      transition: transform .15s ease, opacity .15s ease;
+    }
+    .btn:active { transform: scale(.98); }
+    .btn-primary {
+      background: #31573d;
+      color: #fffdf7;
+    }
+    @media (prefers-color-scheme: dark) {
+      .btn-primary {
+        background: #efe9de;
+        color: #1f1b16;
+      }
+    }
+    .btn-outline {
+      border: 1.5px solid var(--hairline);
+      background: var(--surface-soft);
+      color: var(--text);
+    }
+    .ios-note {
+      width: 100%;
+      max-width: 660px;
+      padding: 12px 16px;
+      border-radius: 14px;
+      background: var(--surface-soft);
+      border: 1px solid var(--hairline);
+      font-size: 13.5px;
+      color: var(--text-muted);
+    }
+    .section {
+      margin-top: 24px;
+      background: var(--surface);
+      border: 1px solid var(--hairline);
+      border-radius: 20px;
+      padding: 24px 22px;
+      box-shadow: var(--shadow);
+    }
+    .section h2 {
+      margin: 0 0 14px;
+      font-size: 20px;
+      color: var(--gold);
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 12px;
+    }
+    .card {
+      padding: 16px;
+      border-radius: 14px;
+      background: var(--surface-soft);
+      border: 1px solid var(--hairline);
+    }
+    .card strong {
+      display: block;
+      margin-bottom: 4px;
+      font-size: 15px;
+      color: var(--text);
+    }
+    .card p {
+      margin: 0;
+      font-size: 13.5px;
+      color: var(--text-muted);
+    }
+    .steps {
+      margin: 0;
+      padding-inline-start: 20px;
+      display: grid;
+      gap: 6px;
+      font-size: 14px;
+      color: var(--text-muted);
+    }
+    .hash-box {
+      margin-top: 14px;
+      padding: 12px 14px;
+      border-radius: 12px;
+      background: var(--surface-soft);
+      border: 1px dashed var(--hairline);
+      font-size: 12.5px;
+      color: var(--text-muted);
+      word-break: break-all;
+    }
+    code {
+      font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+      color: var(--text);
+    }
+    footer {
+      margin-top: 28px;
+      text-align: center;
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+    footer a {
+      color: var(--accent);
+      font-weight: 700;
+      text-decoration: none;
+    }
+    footer a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <section class="hero">
+      <svg class="app-icon" viewBox="0 0 192 192" role="img" aria-label="شعار تطبيق مع الرسول ﷺ" style="background:radial-gradient(circle at 50% 35%,#22402e,#102017);padding:0;">
+        <defs>
+          <linearGradient id="mrGold" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#f2dc9b"/>
+            <stop offset="100%" stop-color="#b79144"/>
+          </linearGradient>
+        </defs>
+        <rect x="4" y="4" width="184" height="184" rx="44" fill="none" stroke="url(#mrGold)" stroke-opacity=".45" stroke-width="2"/>
+        <polygon points="96,26 112,48 139,48 139,75 162,96 139,117 139,144 112,144 96,166 80,144 53,144 53,117 30,96 53,75 53,48 80,48" fill="none" stroke="url(#mrGold)" stroke-width="3.2" stroke-linejoin="round" opacity=".88"/>
+        <circle cx="96" cy="54" r="7.5" fill="none" stroke="url(#mrGold)" stroke-width="2.4"/>
+        <path d="M96 63v8M62 115c0-20 15-34 34-43 19 9 34 23 34 43z" fill="url(#mrGold)" stroke="#f2dc9b" stroke-width="1"/>
+        <path d="M48 122c17-9 33-7 48 4 15-11 31-13 48-4l-4 8c-15-8-30-6-44 3-14-9-29-11-44-3z" fill="#f7eed7"/>
+        <path d="M56 146c15-9 30-13 40-13M136 146c-15-9-30-13-40-13" fill="none" stroke="url(#mrGold)" stroke-width="4.5" stroke-linecap="round"/>
+      </svg>
+      <span class="motto">اسمه كفعله · لنكون مع الرسول ﷺ كل يوم</span>
+      <h1>مع الرسول <span>ﷺ</span></h1>
+      <p class="lead">رفيقك اليومي لتعيش عاداته، وكلامه، ومواقفه، وهديه، وسنته، وسيرته العطرة — تطبيق هادئ وموثوق يعمل محليًا بدون إعلانات أو تتبع.</p>
+      <div class="badges">
+        <span class="badge">الإصدار 1.0.0</span>
+        <span class="badge">أندرويد 8.0 فأحدث</span>
+        <span class="badge">126.25 MB</span>
+        <span class="badge">مجاني وبدون إعلانات</span>
+      </div>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="https://github.com/abdozaq154-crypto/ma3a-rasool/releases/latest/download/ma3a-rasool-v1.0.0.apk" download="ma3a-rasool-v1.0.0.apk">تحميل مباشر للأندرويد (APK)</a>
+        <a class="btn btn-outline" href="https://play.google.com/store/apps/details?id=com.ma3arasool.app" target="_blank" rel="noopener noreferrer">صفحة التطبيق على Google Play</a>
+      </div>
+      <div class="ios-note">
+        <strong>ملاحظة لمستخدمي الآيفون (iOS):</strong> التطبيق متاح حاليًا لأجهزة أندرويد عبر Google Play والتحميل المباشر لملف APK، ونسخة App Store للآيفون قيد الإعداد لاحقًا بإذن الله.
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>كيف تعيش يومك «مع الرسول ﷺ»؟</h2>
+      <div class="grid">
+        <article class="card">
+          <strong>المصحف الشريف</strong>
+          <p>المصحف كاملًا بالرسم العثماني (٦٠٤ صفحات) مع الوضع الليلي وتكبير الخط وحفظ موضع قراءتك تلقائيًا.</p>
+        </article>
+        <article class="card">
+          <strong>مواقيت الصلاة والأذان</strong>
+          <p>حساب دقيق لمواقيت الصلاة حسب موقعك أو مدينتك، وعدّاد على شاشة القفل، و٢٠ أذانًا بدون إنترنت.</p>
+        </article>
+        <article class="card">
+          <strong>كلامه وسيرته ﷺ</strong>
+          <p>حديث يومي صحيح متجدد من البخاري ومسلم، وسلاسل السيرة وكتبها مع حفظ موضع توقفك وتذكير لطيف.</p>
+        </article>
+        <article class="card">
+          <strong>الأذكار والدعاء ويومياتي</strong>
+          <p>أذكار الصباح والمساء وحصن المسلم، و٤٣ دعاءً قرآنيًا، وسبحة رقمية، ومتابعة صلواتك وخطوتك اليومية.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>خطوات التثبيت المباشر لملف APK</h2>
+      <ol class="steps">
+        <li>اضغط على زر <strong>«تحميل مباشر للأندرويد (APK)»</strong> بالأعلى وانتظر اكتمال تنزيل الملف.</li>
+        <li>افتح الملف <code>ma3a-rasool-v1.0.0.apk</code> من إشعار المتصفح أو مدير الملفات.</li>
+        <li>إذا طلب النظام السماح بالتثبيت من المتصفح، اختر <strong>«السماح من هذا المصدر»</strong> ثم اضغط <strong>«تثبيت»</strong>.</li>
+      </ol>
+      <div class="hash-box">
+        <strong>التحقق من سلامة الملف (SHA-256 للنسخة الرسمية 1.0.0):</strong><br />
+        <code>c6168af75e879ce0fbf9615d72573a782432ff8b6a4f39fa781964706746928f</code>
+      </div>
+    </section>
+
+    <footer>
+      <p>التطبيق خالٍ تمامًا من الإعلانات وأدوات التتبع · <a href="./privacy.html">سياسة الخصوصية</a></p>
+    </footer>
+  </div>
+</body>
+</html>
